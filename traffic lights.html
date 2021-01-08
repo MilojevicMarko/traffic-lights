@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic lights</title>
+</head>
+<body>
+  
+  <div id="first" style="width:100px; height:100px; background-color:red;border-radius:50%; border:solid 1px black">
+  </div>
+  <div id="second" style="width:100px; height:100px; background-color:yellow;border-radius:50%; border:solid 1px black">
+  </div>
+  <div id="third" style="width:100px; height:100px; background-color:green;border-radius:50%; border:solid 1px black">
+  </div>
+
+  <br>
+
+  <button onclick="kliknuto(1);">Klikni1</button>
+  <button onclick="kliknuto(2);">Klikni2</button>
+  <button onclick="kliknuto(3);">Klikni3</button>
+
+  <script type="text/javascript">
+    var a = document.getElementById('first');
+    var b = document.getElementById('second');
+    var c = document.getElementById('third');
+    a.style.backgroundColor = 'white';
+    b.style.backgroundColor = 'white';
+    c.style.backgroundColor = 'white';
+    function kliknuto(h) {
+
+      if (h == 1) {
+        a.style.backgroundColor = 'red';
+        b.style.backgroundColor = 'white';
+        c.style.backgroundColor = 'white';
+
+      }
+      else if (h == 2) {
+        a.style.backgroundColor = 'white';
+        b.style.backgroundColor = 'yellow';
+        c.style.backgroundColor = 'white';
+      }
+      else if (h == 3) {
+        a.style.backgroundColor = 'white';
+        b.style.backgroundColor = 'white';
+        c.style.backgroundColor = 'green';
+      }
+    }
+  </script>
+</body>
+</html>
